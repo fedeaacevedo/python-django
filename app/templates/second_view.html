@@ -1,0 +1,8 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<ul>
+    {% for Product in products %}
+        <li>{{ Product.id }} {{ Product.name }}</li>
+    {% endfor %}
+{% endblock %}
